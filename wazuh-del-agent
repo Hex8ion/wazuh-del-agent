@@ -10,12 +10,12 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Configuration
 protocol = 'https'
-host = '192.168.1.145'
+host = ''
 port = 55000
-user = 'wazuh-wui'
-password = 'wazuh-wui'
+user = ''
+password = ''
 login_endpoint = 'security/user/authenticate'
-agent_id = '002'
+agent_id = ''
 
 login_url = f"{protocol}://{host}:{port}/{login_endpoint}"
 basic_auth = f"{user}:{password}".encode()
